@@ -26,6 +26,7 @@ const Feed = () => {
 
   const { displayName, email, photoUrl } = useSelector(selectUser);
 
+  // eslint-disable-next-line
   async function getposts(db) {
     const postsCol = collection(db, "posts");
 
